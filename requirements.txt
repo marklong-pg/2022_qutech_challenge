@@ -1,2 +1,6 @@
-opencv-python
-pyzbar
+opencv-python~=4.5.5.62
+pyzbar~=0.1.8
+
+pysimplegui~=4.56.0
+numpy~=1.22.1
+qiskit~=0.34.1

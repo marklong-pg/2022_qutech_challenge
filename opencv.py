@@ -1,8 +1,6 @@
 
 import cv2
 from pyzbar import pyzbar
-import numpy as np
-
 
 # read QR code and save the code in a file(QPcode_result.txt)
 def read_QRcodes(frame):
@@ -12,18 +10,20 @@ def read_QRcodes(frame):
         # decode QR code and put rectangle around the QR code
         QRcode_info = QRcode.data.decode('utf-8')
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+
         with open("QRcode_result.txt", mode='w') as file:
             file.write(QRcode_info)
+
     return frame
 
 
 # read the medical image with the QR coded name
-def get_image(coded_name):
-    file_name = str(coded_name)+".jpeg"
-    img = cv2.imread(file_name, cv2.IMREAD_GRAYSCALE)
-    cv2.imshow('image', img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+# def get_image(coded_name):
+#     file_name = str(coded_name)+".jpeg"
+#     img = cv2.imread(file_name, cv2.IMREAD_GRAYSCALE)
+#     cv2.imshow('image', img)
+#     cv2.waitKey(0)
+#     cv2.destroyAllWindows()
 
 
 # get data from camera
@@ -41,6 +41,7 @@ def main():
 
     camera.release()
     cv2.destroyAllWindows()
+
 
 if __name__ == '__main__':
     main()

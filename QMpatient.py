@@ -23,8 +23,10 @@ class QMpatient:
         while True:
             try:
                 compressed_data = patient_socket.recv(2048)
-                sleep(0.1 * self.ID) # TODO: remove this when done debugging
-                print(f"Client{self.ID}:", self.attempt_open(compressed_data))
+                # TODO: remove this when done debugging
+                extracted_data = self.attempt_open(compressed_data)
+                if extracted_data:
+                    print(f"Client {self.ID}")
                 # TODO: use thread to branch out the show of image
             except ConnectionResetError:
                 print(f'Server disconnected!')

@@ -5,7 +5,6 @@ if __name__ == "__main__":
     host = '127.0.0.1'
     port = 2004
 
-    print('Waiting for connection response')
     try:
         ClientMultiSocket.connect((host, port))
     except socket.error as e:

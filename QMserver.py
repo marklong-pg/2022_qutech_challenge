@@ -38,13 +38,14 @@ class QMserver:
         while True:
             try:
                 file_name = client_socket.recv(2048).decode('utf-8')
-            except ConnectionResetError:
+                target = int(file_name[0])
+            except (ConnectionResetError, IndexError):
                 print(f'Provider @ {client_address} disconnected!')
                 break
             # implement wrapping and sending of compressed of data
             # REQUIRE: QRmessage format: "[Index of target recipient]_filename"
             #   e.g., string_data = "2_p000cX"
-            target = int(file_name[0])
+
             data_package = wrap_data(file_name, target, self.key_dict)
             if not data_package: continue # TODO: prompt on provider screen file not found
             compressed_data = pickle.dumps(data_package)
