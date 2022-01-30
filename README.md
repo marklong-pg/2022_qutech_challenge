@@ -3,6 +3,9 @@
 
 <img width="586" alt="Screenshot 2022-01-30 at 19 42 44" src="https://user-images.githubusercontent.com/53221131/151696489-60ef17a0-62e3-49e9-b77b-a6eb7aed8075.png">
 
+Using this application, people can send sensitive data such as medical images with the QR code of the data file's name during a video call.
+This prototype recognizes the QR code from camera input and gets the target image file's name in the host server. However, key point is that not everyone can see this data even though they are in this conference call and get the QR code. Using QKD, only the person whom the host intended to show the data can get the right key to open the image file from the server. QKD protects the communication so that any unwanted eavesdropper can not get the target data.  
+
 The application can be seperated into four different subsections:
 1. Quantum Key Distribution (QKD)
 2. openCV Integration
@@ -33,8 +36,8 @@ As the number of people between who the information is to be shared increases it
 ## Quick Tutorial
 
 ## Our Experience at IT iQuHACK 2022
-Mark Long:
-Tristan Austin:
-Freya Shah:
-Paridhi Jain: It was a very enriching experience for me, I am still a novice in quantum computing field and I learnt a lot from my fellow teammates. It was highly enjoyable and super cool to work with my teammates. It was interesting that we were all from different time zones and we were working together variedly. Looking forward to work with them again! :))
-Hyun Lee: Amazing three days with great people. It was a bit hard to get teammates in gather town but after all, I met super cool teammates and learnt a lot from them. It was so fun to see our brainstorming finally flows in one direction. Experience of making something together with others which I can't make by myself gave me such a big energy to dive more into this quantum computing field. Thank you iQuHACK 2022 for this wonderful event!  
+Mark Long:  
+Tristan Austin:  
+Freya Shah:  
+Paridhi Jain: It was a very enriching experience for me, I am still a novice in quantum computing field and I learnt a lot from my fellow teammates. It was highly enjoyable and super cool to work with my teammates. It was interesting that we were all from different time zones and we were working together variedly. Looking forward to work with them again! :))  
+Hyun Lee: Amazing three days with great people. It was a bit hard to get teammates in gather town but after all, I met super cool teammates and learnt a lot from them. It was so fun to see our brainstorming finally flows in one direction. Experience of making something together with others which I can't make by myself gave me such a big energy to dive more into this quantum computing field. Thank you iQuHACK 2022 for this wonderful event!    
