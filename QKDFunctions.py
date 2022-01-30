@@ -1,6 +1,5 @@
 import numpy as np
-from qiskit import QuantumCircuit, Aer, transpile, assemble
-from qiskit.visualization import plot_histogram, plot_bloch_multivector
+from qiskit import QuantumCircuit, Aer, transpile
 
 # Takes in a bit string msg and basis list
 def encode_message(msg, basis):
@@ -120,31 +119,31 @@ def gen_keys(agents, listener=False, verbose=False):
         
     return keys
 
-# Takes in a fname and target person and dictionary of keys
-def wrap_data(fname, target, key_dict):
-    try:
-        # Makes sure the file exists
-        f = open(fname, 'r')
-    except FileNotFoundError:
-        print('File does not exist.')
-        return False
-    # Makes sure the name is in the dict of keys
-    # TODO: seems not quite right, list of keys?? dictionary??
-    if target in key_dict.keys():
-        f.close()
-        return Datapackage(fname, key_dict.get(target))
-    else:
-        return False
-
-# Object to hold fname/file and associated key
-class Datapackage():
-    def __init__(self, fname, pword):
-        self.fname = fname
-        self.pword = pword
-    
-    def unlock(self, key):
-        if (key == self.pword):
-            return self.fname
-        else:
-            return False
+# # Takes in a fname and target person and dictionary of keys
+# def wrap_data(fname, target, key_dict):
+#     try:
+#         # Makes sure the file exists
+#         f = open(fname, 'r')
+#     except FileNotFoundError:
+#         print('File does not exist.')
+#         return False
+#     # Makes sure the name is in the dict of keys
+#     # TODO: seems not quite right, list of keys?? dictionary??
+#     if target in key_dict.keys():
+#         f.close()
+#         return Datapackage(fname, key_dict.get(target))
+#     else:
+#         return False
+#
+# # Object to hold fname/file and associated key
+# class Datapackage():
+#     def __init__(self, fname, pword):
+#         self.fname = fname
+#         self.pword = pword
+#
+#     def unlock(self, key):
+#         if (key == self.pword):
+#             return self.fname
+#         else:
+#             return False
 

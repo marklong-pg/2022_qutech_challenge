@@ -1,17 +1,20 @@
 import socket
 from _thread import *
 # from QKDFunctions import wrap_data, Datapackage
+from QKDFunctions import gen_key
 import pickle
 
 class QMserver:
 
-    def __init__(self, host, port, key_dict):
+    def __init__(self, host, port):
         self.host = host
         self.port = port
         self.server_socket = socket.socket()
         self.provider_flag = True
         self.client_list = []
-        self.key_dict = key_dict
+        self.key_dict = dict()
+        self.patient_count = 0
+        # TODO: prompt QKD and increase patient count instead
 
     def start(self):
         try:
@@ -61,8 +64,13 @@ class QMserver:
                 start_new_thread(self.handle_provider, (client_socket, client_address))
                 self.provider_flag = False
             else:
-                print('Patient connected!')
+                print('Patient connected! Generating key through QKD protocol BB84....')
                 self.client_list.append((client_socket, client_address))
+                self.patient_count = self.patient_count + 1
+                key = ''.join(map(str, gen_key()))
+                print(f'Generated key: {key}')
+                self.key_dict[self.patient_count] = key
+                client_socket.sendall(key.encode())
         self.server_socket.close()
 
 
@@ -98,6 +106,6 @@ if __name__ == "__main__":
     _host = '127.0.0.1'
     _port = 2004
     _key_dict = {1: 111, 2: 222, 3:333}
-    server = QMserver(_host, _port, _key_dict)
+    server = QMserver(_host, _port)
     server.start()
     server.accept_connections()

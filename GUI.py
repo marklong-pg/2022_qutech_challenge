@@ -37,6 +37,8 @@ layout = [[
 
 
 window = sg.Window("QueueMeet", layout, location=(800, 400))
+
+
 # Setup videocapture
 cap = cv2.VideoCapture(0)
 
@@ -44,7 +46,7 @@ cap = cv2.VideoCapture(0)
 names = ['Bob', 'Cole', 'Evan', 'Dylan']
 
 while True:
-    event, values = window.read(timeout=20)
+    event, _ = window.read(timeout=20)
     if event == "Exit" or event == sg.WIN_CLOSED:
         break
     

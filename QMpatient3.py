@@ -15,7 +15,6 @@ class QMpatient:
         self.key = str()
         self.host = host
         self.port = port
-    # TODO: create function to apply refreshing of keys
 
     def connect(self):
         import PySimpleGUI as sg
@@ -64,7 +63,7 @@ def startPatient(ID,key):
 
 
 if __name__ == "__main__":
-    patient = QMpatient(ID=1)
+    patient = QMpatient(ID=3)
     # thread = Thread(target=startPatient, args=(patient,))
     patient.connect()
     # thread.start()
