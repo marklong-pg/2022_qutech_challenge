@@ -121,7 +121,7 @@ def gen_keys(agents, listener=False, verbose=False):
     return keys
 
 # Takes in a fname and target person and dictionary of keys
-def readFile(fname, target, a_keys):
+def wrap_data(fname, target, key_dict):
     try:
         # Makes sure the file exists
         f = open(fname, 'r')
@@ -129,9 +129,10 @@ def readFile(fname, target, a_keys):
         print('File does not exist.')
         return False
     # Makes sure the name is in the dict of keys
-    if (target in a_keys):
+    # TODO: seems not quite right, list of keys?? dictionary??
+    if target in key_dict.keys():
         f.close()
-        return Datapackage(fname, a_keys[target])
+        return Datapackage(fname, key_dict.get(target))
     else:
         return False
 
