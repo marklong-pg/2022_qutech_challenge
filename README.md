@@ -36,8 +36,8 @@ As the number of people between who the information is to be shared increases it
 ## Quick Tutorial
 
 ## Our Experience at IT iQuHACK 2022
-Mark Long:  
-Tristan Austin:  
-Freya Shah:  
-Paridhi Jain: It was a very enriching experience for me, I am still a novice in quantum computing field and I learnt a lot from my fellow teammates. It was highly enjoyable and super cool to work with my teammates. It was interesting that we were all from different time zones and we were working together variedly. Looking forward to work with them again! :))  
-Hyun Lee: Amazing three days with great people. It was a bit hard to get teammates in gather town but after all, I met super cool teammates and learnt a lot from them. It was so fun to see our brainstorming finally flows in one direction. Experience of making something together with others which I can't make by myself gave me such a big energy to dive more into this quantum computing field. Thank you iQuHACK 2022 for this wonderful event!    
+**Mark Long**:  
+**Tristan Austin**:  
+**Freya Shah**:  
+**Paridhi Jain**: It was a very enriching experience for me, I am still a novice in quantum computing field and I learnt a lot from my fellow teammates. It was highly enjoyable and super cool to work with my teammates. It was interesting that we were all from different time zones and we were working together variedly. Looking forward to work with them again! :))  
+**Hyun Lee**: Amazing three days with great people. It was a bit hard to get teammates in gather town but after all, I met super cool teammates and learnt a lot from them. It was so fun to see our brainstorming finally flows in one direction. Experience of making something together with others which I can't make by myself gave me such a big energy to dive more into this quantum computing field. Thank you iQuHACK 2022 for this wonderful event!    
