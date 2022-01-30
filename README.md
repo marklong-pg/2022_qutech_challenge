@@ -1,5 +1,5 @@
 # QueueMeet
-A prototype conference call software utilizing quantum key distribution for telemedicine applications.
+**A prototype conference call software utilizing quantum key distribution for telemedicine applications.**
 
 <img width="586" alt="Screenshot 2022-01-30 at 19 42 44" src="https://user-images.githubusercontent.com/53221131/151696489-60ef17a0-62e3-49e9-b77b-a6eb7aed8075.png">
 
