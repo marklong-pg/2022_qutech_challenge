@@ -17,7 +17,7 @@ Quantum key distribution is an interesting application of quantum computing and 
 This aspect of the application was developed using Qiskit and numpy. It followed the BB84 encryption technique. More specifically, it involved generateing random bit strings, encoding them into random bases, measuring them in random bases, comparing the encoded and measured bases, and then sharing a small sample of the bit strings to determine the presence of an eavesdropper. The final key, after discarding the sample, is completely private to a really high accuracy. This section of the code generates keys for each agent in the conference call.
 
 ## OpenCV Integration
-
+OpenCV enables tracking and recognizing the QR codes from a user's camera. As medical data like the x-ray images we used as examples should be concerned with a high level of data security, the QR code is containing the file path of the wanted file in the hospital server, not the data itself. Combined with QKD, only the person who needs to see a particular x-ray image can reach the file in the hospital database with the right key and the other participants can not open the image file even if they capture the QR code in the conference call.    
 
 ## User Interface
 The UI was coded using PySimpleGUI. It involves very simple image display features and utilitizes the QR code recognition from openCV. 
