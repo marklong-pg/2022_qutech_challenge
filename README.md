@@ -36,6 +36,6 @@ As the number of people between who the information is to be shared increases it
 Mark Long:
 Tristan Austin:
 Freya Shah:
-Paridhi Jain:
+Paridhi Jain: It was a very enriching experience for me, I am still a novice in quantum computing field and I learnt a lot from my fellow teammates. It was highly enjoyable and super cool to work with my teammates. It was interesting that we were all from different time zones and we were working together variedly. Looking forward to work with them again! :))
 Hyun Lee: 
 
