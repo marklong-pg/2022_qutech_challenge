@@ -1,7 +1,7 @@
 # QueueMeet
 A prototype conference call software utilizing quantum key distribution for telemedicine applications.
 
-![IMG-20220130-WA0008](https://user-images.githubusercontent.com/28627285/151691158-f4988a0a-c077-42c8-80d7-a829a45323bc.jpg)
+<img width="586" alt="Screenshot 2022-01-30 at 19 42 44" src="https://user-images.githubusercontent.com/53221131/151696489-60ef17a0-62e3-49e9-b77b-a6eb7aed8075.png">
 
 The application can be seperated into four different subsections:
 1. Quantum Key Distribution (QKD)
