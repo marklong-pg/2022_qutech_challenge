@@ -32,3 +32,10 @@ As the number of people between who the information is to be shared increases it
 
 ## Quick Tutorial
 
+## Our Experience at IT iQuHACK 2022
+Mark Long:
+Tristan Austin:
+Freya Shah:
+Paridhi Jain:
+Hyun Lee: 
+
