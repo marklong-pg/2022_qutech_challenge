@@ -6,7 +6,8 @@ The application can be seperated into four different subsections:
 1. Quantum Key Distribution (QKD)
 2. openCV Integration
 3. User Interface
-4. Django Server
+4. Native Socket Server
+5. VQE Client Host Optimization
 
 The purpose and implementation of each section will be outlined below.
 
@@ -17,10 +18,15 @@ This aspect of the application was developed using Qiskit and numpy. It followed
 
 ## OpenCV Integration
 
+
 ## User Interface
 The UI was coded using PySimpleGUI. It involves very simple image display features and utilitizes the QR code recognition from openCV. 
 
-## Django Server
+## Native Socket Server
+
+
+## VQE Client Host Optimization
+
 
 ## Quick Tutorial
 
